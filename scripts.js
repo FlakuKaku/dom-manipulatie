@@ -1,2 +1,2 @@
 const myName = 'Paul';
-const messageElement = document.getElementById('message') += myName;
+const messageElement = document.getElementById('message').innerHTML += myName;
