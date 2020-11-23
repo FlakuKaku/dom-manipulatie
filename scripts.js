@@ -1,11 +1,10 @@
-const myName = 'Paul';
-const messageElement = document.getElementById('message').innerHTML += myName;
+const myName = 'Hi Paul';
+const messageElement = document.getElementById('message');
 function myFunction() {
-    var x = document.getElementById('message');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
+    if (messageElement.innerHTML === myName) {
+        messageElement.innerHTML = '';
     } else {
-        x.style.display = 'none'
+        messageElement.innerHTML = myName;
     }
 }
 
